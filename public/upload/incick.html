@@ -1,0 +1,21 @@
+<html>
+<head><title> Ejemplo del evento onClick</title>
+<script language=JavaScript>
+var numberOfClicks = 0;
+
+function myButton_onclick() {
+   numberOfClicks++;
+   window.document.form1.myButton.value = 'Botón pulsado ' + numberOfClicks + 
+   ' veces';
+}
+</script>
+</head>
+<body>
+
+<FORM NAME=form1>
+   <INPUT TYPE='button' NAME='myButton' VALUE='Botón pulsado 0 veces' 
+   onclick="myButton_onclick()">
+</FORM>
+
+</body>
+</html>
