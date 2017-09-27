@@ -15,8 +15,8 @@ var servidor=http.createServer(function(pedido,respuesta){
     encaminar(pedido,respuesta,camino);
 });
 
-
-servidor.listen(4330, '127.0.0.1');
+var puerto = process.env.PORT || 3000;
+servidor.listen(puerto);
 
 
 function encaminar (pedido,respuesta,camino) {
